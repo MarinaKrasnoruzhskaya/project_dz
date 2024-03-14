@@ -1,8 +1,12 @@
 def str_upper(s: str):
     """возвращает строку с заглавными буквами"""
-    return s.upper()
+    if s.isalpha():
+        return s.upper()
+    return s
 
 
 def str_title(s: str):
     """возвращает строку с заглавными первыми буквами в каждом слове"""
-    return s.title()
+    if s.isalpha():
+        return s.title()
+    return s
